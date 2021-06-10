@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello fruits</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="white"/>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">:: Hello fruits ::</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>          
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page content -->
+    <main class="container">
+      <h1>Welcome to Hello fruits</h1>
+      
+        <div class="form-group">
+          <label for="fruitName">Fruit name :</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fruitName"
+            placeholder="Enter a fruit name to get its caracteristics"
+          >          
+        </div>
+        <button id="findButton" class="btn btn-primary" onclick="updateFruit()">Find</button>
+      
+      <div id="fruitAnswer">...</div>     
+    </main>
+    
+    <!-- Register our service worker-->
+    <script src="app.js"></script>
+
+  </body>
+</html>
